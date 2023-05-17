@@ -5,6 +5,8 @@ import People.Client;
 import java.util.Scanner;
 
 public class WithdrawFunds {
+    /** Цей клас використовується для знаття коштів з картки */
+
     private final Client client;
     private final Scanner scanner = new Scanner(System.in);
 

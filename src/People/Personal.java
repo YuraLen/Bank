@@ -4,6 +4,7 @@ public class Personal {
     /** Цей клас вважаєтся батьківским класом класів Specialist, Cashier1, Cashier2.
      * У цьому класі визначені загальні атрибути та методи, які можуть бути використані в цих підкласах.
      * */
+
     private String name;
     private String position;
 

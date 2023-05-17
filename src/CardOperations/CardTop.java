@@ -5,6 +5,8 @@ import People.Client;
 import java.util.Scanner;
 
 public class CardTop {
+    /** Цей клас використовується для поповнення коштів на картку */
+
     private Client client;
     private Scanner scanner = new Scanner(System.in);
 

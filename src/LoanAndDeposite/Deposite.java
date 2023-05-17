@@ -5,6 +5,8 @@ import People.Client;
 import java.util.Scanner;
 
 public class Deposite {
+    /** Цей клас створений для того щоб клієнт міг покласти гроші на депозит */
+
     private final Client client;
 
     public Deposite(Client client) {

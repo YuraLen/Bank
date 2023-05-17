@@ -1,6 +1,8 @@
 package People;
 
 public class Client {
+    /** Цей клас представляє клієнта в системі банку.
+     * Він містить різні властивості та методи для управління інформацією про клієнта та його фінансовий стан.*/
     private String name;
     private String surname;
     private String patronymic;

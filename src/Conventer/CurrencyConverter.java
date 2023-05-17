@@ -6,6 +6,10 @@ import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 
 public class CurrencyConverter {
+    /** Цей клас містить методи та властивості для конвертації валют для клієнтів банку.
+     *  Він надає можливість обмінювати гроші між різними валютами.
+     * */
+
     private final Client client;
     private final Scanner scanner = new Scanner(System.in);
     private double USD_TO_UAH_RATE = 26.5;

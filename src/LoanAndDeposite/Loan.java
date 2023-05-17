@@ -5,6 +5,7 @@ import People.Client;
 import java.util.Scanner;
 
 public class Loan {
+    /** Цей клас містить методи та властивості для обробки запитів на отримання кредиту від банку. */
 
     private final Client client;
 

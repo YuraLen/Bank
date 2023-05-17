@@ -9,6 +9,7 @@ public class Specialist extends Personal {
     /** Клас Specialist є підкласом класу Personal і представляє спеціаліста, який працює в банку.
      *  У цьому класі описані методи та атрибути, які дозволяють спеціалісту працювати з клієнтами.
      * */
+
     private final Client client;
 
     public Specialist(String name, String position, Client client) {

@@ -11,6 +11,7 @@ public class Cashier1 extends Personal {
      *  У цьому класі описані методи та атрибути, які дозволяють касиру взаємодіяти з клієнтами
      *  щодо операцій з банківськими рахунками та валютою.
      * */
+
     private Client client;
     private CardTop cardTop;
     private WithdrawFunds withdrawFunds;

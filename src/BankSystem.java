@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class BankSystem {
     /** У цьокму класі відбувається збірка проекту. Підтягування осонвних класів та ініціалізація певних данних  */
+
     public void start(){
         Scanner scanner = new Scanner(System.in);
         Client client = new Client();
