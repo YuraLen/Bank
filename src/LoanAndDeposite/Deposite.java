@@ -14,8 +14,8 @@ public class Deposite {
     }
 
     public void getDeposite(Scanner scanner){
-        System.out.println("Касир: В нашому банку процент річної ставки сягає 25%");
-        client.setDepositInterestRate(25);
+        System.out.println("Касир: В нашому банку процент річної ставки сягає 12%");
+        client.setDepositInterestRate(12);
         System.out.println("Введіть суму депозиту: ");
         client.setDepositAmount(scanner.nextDouble());
         System.out.println("Введіть строк депозиту в місяцях: ");

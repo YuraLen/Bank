@@ -76,7 +76,7 @@ public class CurrencyConverter {
                     break;
                 case 2:
                     double resEUR = (double) Math.round((amount / EUR_TO_UAH_RATE) * 100) / 100;
-                    client.setCardAmountInEuro((client.getAmountInEuro() + resEUR));
+                    client.setAmountInEuro((client.getAmountInEuro() + resEUR));
                     client.setAmountInHryvnias((client.getAmountInHryvnias() - amount));
                     System.out.printf("Отримано %.2f€. Баланс готівкою: %.2f€. Баланс на картці: %.2f€.\n",
                         resEUR, client.getAmountInEuro(), client.getCardAmountInEuro());
@@ -105,7 +105,7 @@ public class CurrencyConverter {
         if (amount <= client.getAmountInEuro()){
         double res = (double) Math.round((amount * EUR_TO_UAH_RATE) * 100) / 100;
         client.setAmountInHryvnias(client.getAmountInHryvnias() + res);
-        System.out.printf("Отримано %.2f€. Баланс готівкою: %.2f€. Баланс на картці: %.2f€.\n",
+        System.out.printf("Отримано %.2f₴. Баланс готівкою: %.2f₴. Баланс на картці: %.2f₴.\n",
                 res, client.getAmountInHryvnias(), client.getCardAmountInHryvnias());
         } else {
             System.out.println("Помилка! У Вас недостатньо коштів для обміну!");
