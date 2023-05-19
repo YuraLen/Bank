@@ -12,14 +12,14 @@ public class CurrencyConverter {
 
     private final Client client;
     private final Scanner scanner = new Scanner(System.in);
-    private double USD_TO_UAH_RATE = 26.5;
-    private double EUR_TO_UAH_RATE = 31.8;
+    private double USD_TO_UAH_RATE = 36.94;
+    private double EUR_TO_UAH_RATE = 39.86;
 
     public CurrencyConverter(Client client) {
         this.client = client;
     }
 
-    public void convert() {
+     public void convert() {
         boolean isFinished = false;
 
         while (!isFinished) {

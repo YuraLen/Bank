@@ -5,7 +5,7 @@ import People.Client;
 import java.util.Scanner;
 
 public class Loan {
-    /** Цей клас містить методи та властивості для обробки запитів на отримання кредиту від банку. */
+    /** Цей клас містить методи та властивості для обробки запитів на отримання кредиту в банку. */
 
     private final Client client;
 
@@ -25,7 +25,8 @@ public class Loan {
         int loanTermMonths = loanTermYears * 12;
 
         client.setLoanTerminInYears(loanTermYears);
-        client.setMonthlyPayment((double) Math.round(calculateMonthlyPayment(loanAmount, monthlyInterestRate, loanTermMonths) * 100) / 100);
+        client.setMonthlyPayment((double) Math.round(calculateMonthlyPayment(loanAmount, monthlyInterestRate,
+                loanTermMonths) * 100) / 100);
         client.setAmountLoan(client.getMonthlyPayment() * loanTermMonths);
         client.setTotalInterest((double) Math.round((client.getAmountLoan() - loanAmount) * 100) / 100);
         client.setAmountInHryvnias(client.getAmountInHryvnias() + loanAmount);

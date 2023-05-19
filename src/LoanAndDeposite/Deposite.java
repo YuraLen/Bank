@@ -22,7 +22,8 @@ public class Deposite {
         client.setDepositTermInMonths(scanner.nextInt());
 
         if (client.getDepositAmount() <= client.getAmountInHryvnias()){
-            client.setDepositAmountOfInterest(client.getDepositAmount() * client.getDepositInterestRate() / 100 / 12 * client.getDepositTermInMonths());
+            client.setDepositAmountOfInterest(client.getDepositAmount() * client.getDepositInterestRate() / 100 / 12
+                    * client.getDepositTermInMonths());
             client.setTotalAmountOfDeposit(client.getDepositAmount() + client.getDepositAmountOfInterest());
             client.setAmountInHryvnias(client.getAmountInHryvnias() - client.getDepositAmount());
 
